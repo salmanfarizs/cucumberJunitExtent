@@ -1,0 +1,26 @@
+node {
+    
+    checkout scm
+    def mvnHome
+    stage('Dev Deployment') { // for display purposes
+        // Get some code from a GitHub repository
+        git 'https://github.com/salmanfarizs/cucumberJunitExtent.git'
+        // Get the Maven tool.
+        // ** NOTE: This 'M3' Maven tool must be configured
+        // **       in the global configuration.
+        mvnHome = tool 'M3'
+    }
+    stage('Automated Tests') {
+        // Run the maven build
+        withEnv(["MVN_HOME=$mvnHome"]) {
+            if (isUnix()) {
+                sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean install'
+            } else {
+                bat(/"%MVN_HOME%\bin\mvn" -Dmaven.test.failure.ignore clean install/)
+            }
+        }
+    }
+    stage('Pre - Prod Deployment') {
+        echo "Pre Production deployment"
+    }
+}
