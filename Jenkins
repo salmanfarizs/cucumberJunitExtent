@@ -25,4 +25,14 @@ node {
     }
     
     archiveArtifacts artifacts: '**/target/index.html', followSymlinks: false
+    
+     // publish html
+    publishHTML ([
+        allowMissing: false,
+        alwaysLinkToLastBuild: false,
+        keepAll: true,
+        reportDir: 'target',
+        reportFiles: 'index.html',
+        reportName: "Automation Test Report"
+      ])
 }
