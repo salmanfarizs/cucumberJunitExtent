@@ -35,7 +35,7 @@ public class Hooks {
 	public static void beforeScenario(Scenario scenario) {
 
 		scenarioname=scenario.getName().replace("\"", "");
-		ExtentSparkReporter spark = new ExtentSparkReporter("target//spark.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter("target//index.html");
 		extent.attachReporter(spark);
 		Hooks.test = Hooks.extent.createTest(scenario.getName()).assignAuthor("Salman")
 				.assignCategory("smoke tests").assignDevice("Windows");
