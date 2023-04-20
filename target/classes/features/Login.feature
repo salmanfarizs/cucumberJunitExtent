@@ -4,7 +4,7 @@ Feature: Title of your feature
 
 
   @tag2
-  Scenario Outline: 1st Title of your scenario outline "<channel>"
+  Scenario Outline: First Shopping scenario for "<channel>"
     Given Set channel "<channel>"
     Then Login into Application
     And perform amazon shopping
@@ -16,7 +16,7 @@ Feature: Title of your feature
   
   
   
-  Scenario Outline: 2nd Title of your scenario outline "<channel>"
+  Scenario Outline: Second Shooping scenario for "<channel>"
     Given Set channel "<channel>"
     Then Login into Application
     And perform amazon shopping
