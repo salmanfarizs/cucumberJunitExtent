@@ -27,5 +27,5 @@ node {
    // archiveArtifacts artifacts: '**/target/index.html', followSymlinks: false
     
      // publish html
-   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/Users/salmanfariz/.jenkins/workspace/EmiratesSampleDev/target', reportFiles: 'index.html', reportName: 'UI Tests Report', reportTitles: '', useWrapperFileDirectly: true])
+   publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '/Users/salmanfariz/.jenkins/workspace/EmiratesSampleDev/target', reportFiles: 'index.html', reportName: 'UI Tests Report', reportTitles: '', useWrapperFileDirectly: false])
 }
