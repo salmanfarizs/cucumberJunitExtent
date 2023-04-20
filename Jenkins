@@ -4,7 +4,7 @@ node {
     def mvnHome
     stage('Dev Deployment') { // for display purposes
         // Get some code from a GitHub repository
-        git 'https://github.com/salmanfarizs/cucumberJunitExtent.git'
+       git branch: 'main', url: 'https://github.com/salmanfarizs/cucumberJunitExtent.git'
         // Get the Maven tool.
         // ** NOTE: This 'M3' Maven tool must be configured
         // **       in the global configuration.
