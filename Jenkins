@@ -23,4 +23,6 @@ node {
     stage('Pre - Prod Deployment') {
         echo "Pre Production deployment"
     }
+    
+    archiveArtifacts artifacts: '/Users/salmanfariz/.jenkins/workspace/EmiratesSampleDev/target', followSymlinks: false
 }
