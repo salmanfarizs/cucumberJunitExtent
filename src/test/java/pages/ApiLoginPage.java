@@ -11,10 +11,11 @@ public class ApiLoginPage {
 	public void getToken() {
 
 		try {
-			RestAssured.baseURI = "https://gorest.co.in/public/v2/posts";
+			RestAssured.baseURI = "https://reqres.in/api";
 
-			Response response = RestAssured.given().contentType(ContentType.JSON).get("/public/v2/users/507");
+			Response response = RestAssured.given().contentType(ContentType.JSON).get("/users?page=2");
 
+			System.out.println(response.getStatusCode());
 			System.out.println(response.getBody().asString());
 			Hooks.test.pass("Api captured");
 		} catch (Exception e) {

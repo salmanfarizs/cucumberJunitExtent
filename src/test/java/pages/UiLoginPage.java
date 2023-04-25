@@ -16,6 +16,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import commonactions.Browser;
+import junit.framework.Assert;
 import pattern.UiStrategy;
 
 public class UiLoginPage {
