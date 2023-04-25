@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="62" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="62" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+      <class name="runner.Sample">
+        <test-method status="PASS" signature="bs()[pri:0, instance:runner.Sample@3cc2931c]" name="bs" is-config="true" duration-ms="20" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bs -->
+        <test-method status="PASS" signature="bt()[pri:0, instance:runner.Sample@3cc2931c]" name="bt" is-config="true" duration-ms="3" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method status="PASS" signature="bc()[pri:0, instance:runner.Sample@3cc2931c]" name="bc" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bc -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:runner.Sample@3cc2931c]" name="bm" is-config="true" duration-ms="1" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="testNg()[pri:-1, instance:runner.Sample@3cc2931c]" name="testNg" duration-ms="6" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNg -->
+        <test-method status="PASS" signature="am()[pri:0, instance:runner.Sample@3cc2931c]" name="am" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:runner.Sample@3cc2931c]" name="bm" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="testNg()[pri:-1, instance:runner.Sample@3cc2931c]" name="testNg" duration-ms="1" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNg -->
+        <test-method status="PASS" signature="am()[pri:0, instance:runner.Sample@3cc2931c]" name="am" is-config="true" duration-ms="1" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="bm()[pri:0, instance:runner.Sample@3cc2931c]" name="bm" is-config="true" duration-ms="1" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bm -->
+        <test-method status="PASS" signature="testNg2()[pri:0, instance:runner.Sample@3cc2931c]" name="testNg2" duration-ms="4" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNg2 -->
+        <test-method status="PASS" signature="ac()[pri:0, instance:runner.Sample@3cc2931c]" name="ac" is-config="true" duration-ms="1" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ac -->
+        <test-method status="PASS" signature="am()[pri:0, instance:runner.Sample@3cc2931c]" name="am" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- am -->
+        <test-method status="PASS" signature="at()[pri:0, instance:runner.Sample@3cc2931c]" name="at" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- at -->
+        <test-method status="PASS" signature="as()[pri:0, instance:runner.Sample@3cc2931c]" name="as" is-config="true" duration-ms="0" started-at="2023-04-22T16:14:45Z" finished-at="2023-04-22T16:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- as -->
+      </class> <!-- runner.Sample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

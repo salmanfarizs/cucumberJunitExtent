@@ -1,10 +1,10 @@
 package pattern;
 
 public class ChannelFactory {
-	enum channelTypeEnum {
-		API,
-		UI;
-	}
+//	enum channelTypeEnum {
+//		API,
+//		UI;
+//	}
 	public Channel getChannel(String channelType) {
 
 		CapabilityFactory.channelTypeEnum channel;

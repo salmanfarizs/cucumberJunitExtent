@@ -12,6 +12,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import hooks.Hooks;
 import io.cucumber.junit.*;
+import io.cucumber.junit.CucumberOptions.SnippetType;
 
 
 
@@ -20,32 +21,8 @@ import io.cucumber.junit.*;
 		
 		features="resource/features",
 		glue= {"steps","hooks"},
+		plugin= {"pretty","html:target/cucumberreport.html"},
 		monochrome=true)
 public class TestRunner {
-
-	
-//	@BeforeClass
-//	public static void setUp() {
-//		
-//		Hooks.setUp();
-	
-//		
-	
-//		
-//	}
-	
-//	
-	
-	
-	
-	
-	
-//	@AfterClass
-//	public static void tearDown() {
-//		
-	
-//		Hooks.afterScenario();
-//	}
-	
 	
 }

@@ -8,6 +8,7 @@ import java.util.Base64;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.pdfbox.io.IOUtils;
@@ -95,5 +96,15 @@ public class Browser extends Hooks {
 		
 		
 	}
+	
+	
+	public boolean matches(String pattern,String text) {
+		
+		return Pattern.matches(pattern, text);
+		
+	}
+	
+	
+	
 	
 }

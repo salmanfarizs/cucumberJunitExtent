@@ -16,12 +16,4 @@ Feature: Title of your feature
   
   
   
-  #Scenario Outline: Second Shooping scenario for "<channel>"
-    #Given Set channel "<channel>"
-    #Then Login into Application
-    #And perform amazon shopping
-#
-    #Examples: 
-      #| channel |
-      #| UI      |
-      #|API|
+ 

@@ -10,8 +10,10 @@ import java.util.Map.Entry;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import commonactions.Browser;
 import pattern.UiStrategy;
@@ -72,6 +74,9 @@ public class UiLoginPage {
 		}
 
 		List<Entry<WebElement, String>> lst = new ArrayList<Entry<WebElement, String>>(pricemap.entrySet());
+		
+		
+				
 		Collections.sort(lst, new Comparator<Map.Entry<WebElement, String>>() {
 
 			public int compare(Entry<WebElement, String> o1, Entry<WebElement, String> o2) {
@@ -93,10 +98,30 @@ public class UiLoginPage {
 		}
 		
 		
+		
 		System.out.println("sorted list having map");
 		
 		System.out.println("lowest price is" + lst.get(0).getValue());
-		lst.get(0).getKey().click();
+		
+        JavascriptExecutor js = (JavascriptExecutor)browser.driver;
+		
+		js.executeScript("window.scrollBy(0,250)", "");
+		
+		Actions action = new Actions(browser.driver);
+
+		
+		
+		
+		action.keyDown(Keys.COMMAND).click(lst.get(0).getKey()).release(lst.get(0).getKey()).perform();
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		//lst.get(0).getKey().click();
 		
 		
 		Set<String> windowHandles = browser.getActiveWindows();
@@ -109,6 +134,19 @@ public class UiLoginPage {
 		browser.click(By.id("buy-now-button"));
 		
 		
+		Set<String> windowHandles2 = browser.getActiveWindows();
+		
+	List<String> wList2 = new ArrayList<String>();
+		
+		wList2.addAll(windowHandles2);
+		
+		browser.switchToWindow(wList2.get(2));
+		
+		
+		 WebElement continue_btn = browser.driver.findElement( By.id("continue"));
+
+		
+		action.click(continue_btn).perform();
 		
 		
 		

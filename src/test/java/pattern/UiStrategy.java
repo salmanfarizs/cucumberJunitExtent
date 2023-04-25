@@ -17,7 +17,7 @@ public class UiStrategy implements Capability   {
 
 	UiLoginPage uilogin = UiLoginPage.getInstance();
 
-	ChromeOptions options = new ChromeOptions();
+	//ChromeOptions options = new ChromeOptions();
 
 	
 
@@ -26,10 +26,10 @@ public class UiStrategy implements Capability   {
 		
 
 		
-		options.addArguments("--remote-allow-origins=*");
+		//options.addArguments("--remote-allow-origins=*");
 
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver");
-		Browser.driver = new ChromeDriver(options);
+		Browser.driver = new ChromeDriver();
 		Browser.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		Browser.driver.get("https://www.amazon.in/");
 
